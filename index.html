@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Car racing game</title>
+	<meta name="keywords" content="html,css,lekcii">
+	<meta name="description" content="ova e strana za ucenje">
+	<meta name="author" content="Kristijan Bobevski">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+	<!-- Latest compiled and minified BOOTSTRAP CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- Local CSS -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!-- Font-awesome 4.7 cdn -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="race">
+	<!-- write your code here -->
+
+	<h1>Car racing game</h1>
+
+	<button id="start" class="btn">Race!</button>
+	<button id="start-over" class="btn">Start over</button>
+
+	<div id="track">
+		<div id="overlaystart"></div>
+		<div id="overlay"><img src="./images/finish.gif"></div>
+
+		<div id="race-track">
+			<img src="./images/car1.gif" alt="pinkcar" id="car1" class="car">
+			<img src="./images/car2.gif" alt="blackcar" id="car2" class="car">
+		</div>
+
+	</div>
+
+	<div id="info" class="clearfix container-fluid">
+		<div class="row">
+			<div class="col-md-6">
+				<h2>Results</h2>
+				<div class="col-md-6" id="racinfo1">Car 1<p></p>
+				</div>
+
+				<div class="col-md-6" id="racinfo2">Car 2<p></p>
+				</div>
+			</div>
+			<div class="col-md-6" id="previousGameinfo">
+				<h3>Results from the previous time you played this game </h3>
+				<div id="storedInfoCar1">Car 1</div>
+				<div id="storedInfoCar2">Car 2</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- jQuery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+	<script src="app.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
